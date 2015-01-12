@@ -11,6 +11,15 @@
     <meta name="screen-orientation" content="portrait"/>
     <meta name="x5-fullscreen" content="true"/>
     <meta name="360-fullscreen" content="true"/>
+    <style type="text/css">
+    {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none; / Disable selection/copy in UIWebView */
+    }
+    </style>
+    <script type="text/javascript">
+        document.ontouchmove = function(e) {e.preventDefault()};
+    </script>
 <script type="text/javascript">
         // Weixin
         function registerHandlerForWeixinShareContent()
